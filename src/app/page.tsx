@@ -21,7 +21,7 @@ export default function Home() {
               <Minus />
             </Button>
           </div>
-          <p className='text-3xl pb-4 text-primary font-medium self-end'>
+          <p className='text-3xl text-primary font-medium self-end'>
             500,000.00 PHP
           </p>
         </div>
@@ -32,7 +32,7 @@ export default function Home() {
               <Minus />
             </Button>
           </div>
-          <p className='text-3xl pb-4 text-primary font-medium self-end'>
+          <p className='text-3xl text-primary font-medium self-end'>
             300,000.00 PHP
           </p>
         </div>
@@ -43,7 +43,7 @@ export default function Home() {
               <Minus />
             </Button>
           </div>
-          <p className='text-3xl pb-4 text-primary font-medium self-end'>
+          <p className='text-3xl text-primary font-medium self-end'>
             200,000.00 PHP
           </p>
         </div>
