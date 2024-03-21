@@ -16,7 +16,10 @@ export default function Home() {
         </div>
         <div className='bg-card border flex flex-col justify-between p-4 text-white rounded-md'>
           <div className='flex items-center justify-between'>
-            <h2 className='text-2xl font-semibold'>50%</h2>
+            <div>
+              <h2 className='text-2xl font-semibold'>50%</h2>
+              <p className='text-sm text-muted-foreground'>Bills</p>
+            </div>
             <Button variant='outline' size='icon'>
               <Minus />
             </Button>
@@ -27,7 +30,10 @@ export default function Home() {
         </div>
         <div className='bg-card flex border flex-col justify-between p-4 text-white rounded-md'>
           <div className='flex items-center justify-between'>
-            <h2 className='text-2xl font-semibold'>30%</h2>
+            <div>
+              <h2 className='text-2xl font-semibold'>30%</h2>
+              <p className='text-sm text-muted-foreground'>Personal</p>
+            </div>
             <Button variant='outline' size='icon'>
               <Minus />
             </Button>
@@ -38,7 +44,10 @@ export default function Home() {
         </div>
         <div className='bg-card flex border flex-col justify-between p-4 text-white rounded-md'>
           <div className='flex items-center justify-between'>
-            <h2 className='text-2xl font-semibold'>20%</h2>
+            <div>
+              <h2 className='text-2xl font-semibold'>20%</h2>
+              <p className='text-sm text-muted-foreground'>Savings</p>
+            </div>
             <Button variant='outline' size='icon'>
               <Minus />
             </Button>
