@@ -13,11 +13,7 @@ export default function Home() {
       <div className='grid grid-cols-1 flex-grow gap-5'>
         <div className='flex flex-col p-4 items-center justify-center'>
           <p className='text-2xl font-semibold text-primary'>Total Balance</p>
-          <GradualNumber
-            className='text-3xl font-medium'
-            endNumber={1000000}
-            duration={1000}
-          />
+          <GradualNumber endNumber={1000000} />
         </div>
         <div className='bg-card border flex flex-col justify-between p-4 text-white rounded-md'>
           <div className='flex items-center justify-between'>
@@ -29,11 +25,7 @@ export default function Home() {
               <Minus />
             </Button>
           </div>
-          <GradualNumber
-            className='text-3xl font-medium self-end text-primary'
-            endNumber={500000}
-            duration={1000}
-          />
+          <GradualNumber endNumber={500000} className='text-primary self-end' />
         </div>
         <div className='bg-card flex border flex-col justify-between p-4 text-white rounded-md'>
           <div className='flex items-center justify-between'>
@@ -45,11 +37,7 @@ export default function Home() {
               <Minus />
             </Button>
           </div>
-          <GradualNumber
-            className='text-3xl font-medium self-end text-primary'
-            endNumber={300000}
-            duration={1000}
-          />
+          <GradualNumber endNumber={300000} className='text-primary self-end' />
         </div>
         <div className='bg-card flex border flex-col justify-between p-4 text-white rounded-md'>
           <div className='flex items-center justify-between'>
@@ -61,11 +49,7 @@ export default function Home() {
               <Minus />
             </Button>
           </div>
-          <GradualNumber
-            className='text-3xl font-medium self-end text-primary'
-            endNumber={200000}
-            duration={1000}
-          />
+          <GradualNumber endNumber={200000} className='text-primary self-end' />
         </div>
       </div>
     </div>
