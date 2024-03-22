@@ -1,3 +1,4 @@
+import GradualNumber from '@/components/gradual-number';
 import { Button } from '@/components/ui/button';
 import { Minus, Plus } from 'lucide-react';
 
@@ -12,7 +13,11 @@ export default function Home() {
       <div className='grid grid-cols-1 flex-grow gap-5'>
         <div className='flex flex-col p-4 items-center justify-center'>
           <p className='text-2xl font-semibold text-primary'>Total Balance</p>
-          <p className='text-3xl font-medium'>1,000,000.00 PHP</p>
+          <GradualNumber
+            className='text-3xl font-medium'
+            endNumber={1000000}
+            duration={1000}
+          />
         </div>
         <div className='bg-card border flex flex-col justify-between p-4 text-white rounded-md'>
           <div className='flex items-center justify-between'>
@@ -24,9 +29,11 @@ export default function Home() {
               <Minus />
             </Button>
           </div>
-          <p className='text-3xl text-primary font-medium self-end'>
-            500,000.00 PHP
-          </p>
+          <GradualNumber
+            className='text-3xl font-medium self-end text-primary'
+            endNumber={500000}
+            duration={1000}
+          />
         </div>
         <div className='bg-card flex border flex-col justify-between p-4 text-white rounded-md'>
           <div className='flex items-center justify-between'>
@@ -38,9 +45,11 @@ export default function Home() {
               <Minus />
             </Button>
           </div>
-          <p className='text-3xl text-primary font-medium self-end'>
-            300,000.00 PHP
-          </p>
+          <GradualNumber
+            className='text-3xl font-medium self-end text-primary'
+            endNumber={300000}
+            duration={1000}
+          />
         </div>
         <div className='bg-card flex border flex-col justify-between p-4 text-white rounded-md'>
           <div className='flex items-center justify-between'>
@@ -52,9 +61,11 @@ export default function Home() {
               <Minus />
             </Button>
           </div>
-          <p className='text-3xl text-primary font-medium self-end'>
-            200,000.00 PHP
-          </p>
+          <GradualNumber
+            className='text-3xl font-medium self-end text-primary'
+            endNumber={200000}
+            duration={1000}
+          />
         </div>
       </div>
     </div>
